@@ -1,0 +1,187 @@
+html,body,form,ol,ul,li,div,p,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,th,td,font,em,ins,span,a{margin:0; padding:0; vertical-align: baseline;}
+html{filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%;font-weight:normal}
+ul,li,div,dl,dt,dd{list-style:none;}
+img{border:0;}
+
+.mainThird{
+    max-width: 1230px;
+    width: 100%;
+    height: 408px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    background-color: #12141f;
+    box-shadow: 0px 10px 15px 4px rgb(0 0 0 / 30%);
+}
+
+/* Class bar */
+.mainThird .hd {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 1230px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+/* Buttons */
+.mainThird [data-class="assassin"] {--class-icon: url(../images/new/char_1.png) top no-repeat;}
+
+.mainThird [data-class] {background: var(--class-icon);}
+.mainThird [data-class].on {filter: drop-shadow(0px 0px 5px #ff2a00);}
+
+.mainThird .hd span {
+    line-height: 40px;
+    transition: all 0.3s ease;
+    color: #fff !important;
+    font-family: "Philosopher", sans-serif; 
+    font-size: 0px;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    height: 38px;
+    width: 100%;
+    display: inline-flexbox;
+    margin-right: 0px;
+}
+.mainThird .hd span:hover {filter: drop-shadow(0px 0px 5px #fff);}
+.mainThird .hd .on {filter: drop-shadow(0px 0px 5px #ff2a00);}
+.mainThird .hd {background-color: rgb(0 0 0 / 60%)}
+
+/* Main content */
+.mainThird .bd{width: 1230px; height: 480px;}
+.mainThird .bd .li{width: 1230px; height: 480px; position: relative;}
+
+.hreoText {
+    margin-top: 30px;
+    margin-left: 44px;
+    position: absolute;
+    z-index: 2;
+}
+.hreoText h3{
+    height: 50px;
+}
+
+/* Title */
+.hreoText h3 strong{
+    position: relative;
+    padding: 0 25px 10px;
+    float: left; 
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: "Philosopher", sans-serif; 
+    color: #cc7954; 
+    font-weight: normal;
+    border-bottom: 1px solid #22252d;
+}
+/* Title icon */
+.hreoText h3 strong:before {
+    content: "";
+    position: absolute;
+    background: url(../images/title-icon.png) top no-repeat;
+    width: 26px;
+    height: 100%;
+    left: -5px;
+    top: 50%;
+    margin-top: -17px;
+    filter: drop-shadow(0px 0px 5px #ff2a00);
+}
+/* Title class icon */
+.hreoText h3 span {
+    margin-left: -20px;
+}
+.hreoText h3 span img {
+    filter: drop-shadow(0px 0px 5px #fff);
+    width: 26px;
+    height: 26px;
+}
+
+/* Class Description */
+.hreoText p {
+    font-family: "Philosopher", sans-serif; 
+    font-size: 14px; 
+    color: #fff; 
+    line-height: 24px; 
+    padding-bottom: 18px; 
+    margin-bottom: 10px;
+    min-height:48px;
+    transition: 0.3s;
+    filter: drop-shadow(0px 0px 5px black);
+    border-radius: 5px;
+    /*word-wrap: break-word;*/
+}
+.hreoText p:hover {
+    background-color: rgb(0 0 0 / 60%);
+}
+
+/* Class Video */
+.hreoText video{width: 288px; height: 162px; background: #000;}
+
+/* Class Image */
+.hreoImg img {
+    max-width: fit-content;
+	width: 66%;
+}
+.hreoImg {
+    background: none;
+    position: absolute; 
+    top: 0; 
+    z-index: 1; 
+    right:0;
+}
+
+.center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .hreoImg {
+        display: none;
+    }
+    .mainThird {
+        width: 364px;
+        height: 610px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin: 0;
+    }
+
+    .mainThird .bd {
+        background: url(../images/block-top-bg.png) center top no-repeat, url(../images/block-bottom-bg.png) center bottom no-repeat;
+        background-color: #12141f;
+        box-shadow: 0px 10px 15px 4px rgb(0 0 0 / 30%);
+        padding: 0px 0px 85px;
+        width: 100%;
+        height: 565px;
+    }
+    .mainThird .hd {
+        background-color: #12141f;
+        box-shadow: 0px 10px 15px 4px rgb(0 0 0 / 30%);
+        width: 100%;
+    }
+
+    .mainThird .hd {background-color: rgb(0 0 0 / 0%)}
+
+    .hreoText {
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    /*.mainThird img {
+        width: 100%;
+    }*/
+}
+
+

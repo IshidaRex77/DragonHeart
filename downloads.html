@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Dragon Heart | Interlude сервера - x30 и x1200</title>
+	
+	<!-- description -->
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Живые пвп сервера lineage 2 Interlude с большим онлайном  ✓Интересный концепт проекта ✓Легендарный сервер. Регистрируйся и получай бонус при старте!">
+	<meta property="og:description" content="Живые пвп сервера lineage 2 Interlude с большим онлайном  ✓Интересный концепт проекта ✓Легендарный сервер. Регистрируйся и получай бонус при старте!">
+	<meta name="author" content="Dragon Heart">
+	
+	<!-- keywords -->
+	<meta name="keywords" content="Lineage, Lineage 2, l2, la2, Interlude, l2 servers, la2 servers, l2 Interlude">
+		
+	<!-- property -->
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:url" content="https://lk.sphereweb.net/">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="{{template}}/images/favicon/favicon.png">
+	<meta property="og:site_name" content="Dragon Heart">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+		
+	<!-- twitter -->
+	<meta name="twitter:card" content="Dragon Heart">
+	<meta name="twitter:description" content="Живые пвп сервера lineage 2 Interlude с большим онлайном  ✓Интересный концепт проекта ✓Легендарный сервер. Регистрируйся и получай бонус при старте!">
+	<meta name="twitter:url" content="https://lk.sphereweb.net/">
+	<meta name="twitter:image" content="{{template}}/images/favicon/favicon.png">
+	<meta property="og:title" content="Живые пвп сервера lineage 2 Interlude с большим онлайном  ✓Интересный концепт проекта ✓Легендарный сервер. Регистрируйся и получай бонус при старте!">
+	<meta name="twitter:title" content="Dragon Heart">
+	
+	<!-- icon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="{{template}}/images/favicon/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{template}}/images/favicon/favicon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{template}}/images/favicon/favicon.png">
+	
+	<!-- css -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+	<link href="{{template}}/css/swiper-bundle.min.css" rel="stylesheet">
+	<link href="{{template}}/css/slick.css" rel="stylesheet">
+    <link href="{{template}}/css/style.css" rel="stylesheet">
+	<link href="{{template}}/css/mobile-style.css" rel="stylesheet">
+    <link href="{{template}}/css/cms.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{template}}/css/classes.css">
+	<link rel="stylesheet" href="{{template}}/css/yatranslate.css">
+	
+	
+	
+	<body>
+		<div class="wrapper">
+			<header>
+					
+				<div class="topPanel">
+			
+					<div class="btn btn-drop" data-class="topPanel-left">
+						<span></span><span></span><span></span>
+					</div>
+					
+					<div class="topPanel-wrapper flex-c">
+						<div class="topPanel-left flex-c">
+							<a href="/" class="logo-mini bright"><img src="{{template}}/images/logo-mini.png" alt="Logo"></a>
+							<ul class="nav">
+								<li><a href="/">Главная</a></li>
+								<li><a href="/forum" target="_blank">Форум</a></li>
+								<li><a href="/page" target="_blank">Новости</a></li>
+								<li><a href="/donate/pay" target="_blank">Пожертвования</a></li>
+								<li><a href="/statistic/pvp" target="_blank">Статистика</a></li>
+								<li><a href="/about" >О сервере</a></li>
+								<li><a href="/downloads" >Файлы</a></li>
+								
+							</ul>
+						</div>
+						<div class="topPanel-right"><a href="/main" class="sign-in" target="_blank">Личный кабинет</a></div>
+					</div>
+				</div>
+				
+				
+				<div class="logo">
+					<a href="/" class="bright"><img src="{{template}}/images/logo-2.png" alt="Logo"></a>
+				</div>
+				<div class="online flex-c-c">
+					<div class="light-animation">
+						<div class="blue-light"></div>
+						<div class="yellow-light"></div>
+					</div>
+					<div class="onlineBlock">
+					{% for server in server_online_status() %}
+						{% if server.connect_game %}<div class="online_new">online</div>{% else %}<div class="offline_new">OFF</div>{% endif %}
+						<span>{% for online in server_online_status() %}{{online['player_count_online']}}{% endfor %}</span>
+					</div>	
+				</div> {% endfor %}
+            
+				<div class="download">
+					<a href="/downloads" class="download-button bright">Начать играть</a>
+					<div class="more-downloads flex-c-c"></div>
+				</div>
+					<div class="sparks">
+						<div class="spark_1"></div>
+						<div class="spark_2"></div>
+						<div class="spark_3"></div>
+						<div class="spark_4 spark-big"></div>
+					</div>
+			</header>
+			
+			<main class="main">
+				<div class="content">
+                    <div class="h2-title h2-title-content flex-s-c"><span>Скачать файлы</span></div>
+						<div class="downloadBlock-content">
+							<div class="downloadBlock">
+							
+								<div class="step__item">
+									<div class="step__top">
+										<h2 class="step__title">ШАГ 1</h2>
+									</div>
+									<div class="step-content">
+										<h2 class="step__title">РЕГИСТРАЦИЯ МАСТЕР АККАУНТА</h2>
+											<p class="step__text">
+												Для того чтобы иметь возможность войти в игру, Вам необходимо создать мастер-аккаунт, войти в личный кабинет и создать нужное количество игровых аккаунтов.
+											</p>
+										<div class="step__btns d-flex">
+											<a href="" class="step__btn">
+												<a href="/registration/user" class="button">создать аккаунт</a>
+												<a href="/auth" class="button">войти в аккаунт</a>
+											</a>
+										</div>
+									</div>
+								</div>
+								<br/><br/><br/>
+								<div class="step__item">
+									<div class="step__top"><div class="step-top__back"><h2 class="step__title">ШАГ 2</h2></div></div>
+
+									<h2 class="step__title">СКАЧИВАНИЕ ФАЙЛОВ</h2>
+										<div class="step-content d-flex step-content-2">
+											<div class="step-content__item">
+												<h3 class="step-content-item-title">Interlude <span>client</span></h3>
+													<p class="step__text">
+														После того как Вы создали аккаунт, Вам необходимо оригинальный клиент.
+													</p>
+												<div class="step__btns d-flex">
+													<a href="" class="step__btn"><div class="button">СКАЧАТЬ  С САЙТА</div></a>
+													<a href="" class="step__btn"><div class="button">СКАЧАТЬ С GOOGLE</div></a>
+													<a href="" class="step__btn"><div class="button">СКАЧАТЬ С MEGA</div></a>
+												</div>
+													<p class="step__text">
+														Проверьте актуальность файлов с помощью апдейтера DH.exe!
+													</p>
+											</div>
+											
+											<div class="step-content__item">
+												<h3 class="step-content-item-title">Interlude <span>patch</span></h3>
+													<p class="step__text">
+														После того как Вы создали аккаунт, Вам необходимо оригинальный патч.
+													</p>
+												<div class="step__btns d-flex">
+													<a href="" class="step__btn"><div class="button">СКАЧАТЬ  С САЙТА</div></a>
+													<a href="" class="step__btn"><div class="button">СКАЧАТЬ С GOOGLE</div></a>
+													<a href="" class="step__btn"><div class="button">СКАЧАТЬ С MEGA</div></a>
+												</div>
+													<p class="step__text">
+														Проверьте актуальность файлов с помощью апдейтера DH.exe!
+													</p>
+											</div>
+										</div>
+								</div>
+							</div>
+						</div>
+			</main>
+			
+			
+		<footer><span class="line"></span>
+			<div class="wrapper">
+				<div class="footerMenu flex">
+					<div class="footerMenu-block">
+						<div class="h2-title flex-s-c">
+							<span>Полезные ссылки</span>
+						</div>
+						<ul class="f-menu">
+							<li><a href="/registration/user">Регистрация аккаунта</a></li>
+							<li><a href="/donate/pay">Пожертвование</a></li>
+							<li><a href="/donate">Игровой магазин</a></li>
+							<li><a href="/main">Личный кабинет</a></li>
+						</ul>
+					</div>
+					<div class="footerMenu-block">
+						<div class="h2-title flex-s-c">
+							<span>Полезная информация</span>
+						</div>
+						<ul class="f-menu">
+							<li><a href="/downloads">Полезная информация</a></li>
+							<li><a href="/about">Описания сервера</a></li>
+							<li><a href="/main">Ошибки при запуске</a></li>
+							<li><a href="/forum">Wiki по серверу</a></li>
+						</ul>
+					</div>
+					<div class="footerMenu-block">
+						<div class="h2-title flex-s-c"><span>Помощь</span></div>
+						<ul class="f-menu">
+							<li><a href="">Публичная оферта</a></li>
+							<li><a href="">Политика конфиденциальности</a></li>
+							<li><a href="">Порядок проведения оплаты</a></li>
+							<li><a href="">Порядок возврата средств</a></li>
+						</ul>
+					</div>
+					<div class="footerMenu-block">
+						<div class="h2-title flex-s-c"><span>Контакты</span></div>
+						<ul class="f-menu">
+							<li><a href="">Администраторы</a></li>
+							<li><a href="">Техническая поддержка</a></li>
+							<li><a href="">Помощь игракам</a></li>
+							<li><a href="">Правила проекта</a></li>
+						</ul>					
+					</div>
+				</div>
+			<span class="line"></span>
+				<div class="footerInfo">
+					<div class="footerInfo-block ">
+						<div class="playments">
+							<center>	
+							<img src="{{template}}/images/payments/dark_big_logo_10.png" alt="Payments">
+							<img src="{{template}}/images/payments/dark_big_logo_12.png" alt="Payments">
+							<img src="{{template}}/images/payments/dark_big_logo_24.png" alt="Payments">
+							<img src="{{template}}/images/payments/dark_big_logo_27.png" alt="Payments">
+							<img src="{{template}}/images/payments/dark_big_logo_4.png" alt="Payments">
+							<img src="{{template}}/images/payments/dark_big_logo_42.png" alt="Payments">
+							<img src="{{template}}/images/payments/dark_big_logo_6.png" alt="Payments">
+							<img src="{{template}}/images/payments/dark_big_logo_8.png" alt="Payments">
+							</center>
+						</div> 
+							<div class="copy" style="text-align: right;color: #fff;opacity: 0.3;"><span>© 2023</span> Dragon Heart <span>All rights reserved</span></div>
+					</div>
+					<div class="f-text" style="width: 100%; text-align: center;opacity: 0.5;">
+						<div class="dcohen" style="margin-bottom: 15px;">
+							<img src="{{template}}/images/favicon/logo-icon.png" style="width: 35px;">
+						</div>
+						<strong><a href="http://www.nexdev.biz/">Design & Frontend by Next Deverloper</a></strong>
+					</div>		
+				</div>
+			</div>
+		</footer>
+		<strong>
+			<div class="rightBodyLinks">
+				<a href="/forum" class="r-wiki"><span><img src="{{template}}/images/wiki-img.png" alt=""></span>Wiki</a>
+				<a href="/donate" class="r-shop"><span><img src="{{template}}/images/shop-img.png" alt=""></span>Shop</a>
+				<a href="/forum" class="r-forum"><span><img src="{{template}}/images/forum-img.png" alt=""></span>Forum</a>
+			</div> 
+			
+			<div class="toTop"><span>Go to Top</span></div>
+            
+			<div id="overlay"></div>
+			<script src="{{template}}/js/app.min.js"></script>
+			<script type="text/javascript" src="{{template}}/js/jq_183.js"></script>
+			<script type="text/javascript" src="{{template}}/js/jquery.SuperSlide.2.1.js"></script>
+			<script type="text/javascript" src="{{template}}/js/classes.js"></script>
+			<script src="{{template}}/js/jquery-3.5.1.min.js"></script>
+			<script src="{{template}}/js/swiper-bundle.min.js"></script>
+			<script src="{{template}}/js/slick.min.js"></script>
+			<script src="{{template}}/js/global.js"></script>
+			<script src="{{template}}/js/yatranslate.js"></script>
+			<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+			<script>
+			const App = {
+            base_url: 'https://lk.sphereweb.net/',
+            template_dir: 'eos',
+            vote_counter: 45        };
+			</script>
+
+		</strong>
+	</body>
+</html>
